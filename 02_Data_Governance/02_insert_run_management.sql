@@ -1,0 +1,20 @@
+INSERT INTO dbo.Run_Management
+(
+    Pipeline_Name,
+    Batch_ID,
+    Run_Granularity,
+    Start_Time,
+    Status,
+    Trigger_Type,
+    Rows_Processed
+)
+VALUES
+(
+    'Customer_Data_Pipeline',
+    'BATCH_001',
+    'FULL_LOAD',
+    SYSDATETIME(),
+    'START',
+    'MANUAL',
+    50
+);
